@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	     <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	     <meta name="format-detection" content="telephone=no,email=no,adress=no">
+	     <script src="js/swiper-3.3.1.min.js"></script> 
+	     <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	     <link rel="stylesheet" href="css/style.css">
+	     <script src="js/zepto.min.js"></script>
+	     <link rel="stylesheet" href="icon/iconfont.css">
+	    <script>    
+	      (function(doc,win){
+	        doc.documentElement.style.fontSize = doc.documentElement.clientWidth/375*50+"px";
+	      })(document,window)	
+	    	
+	    </script>
+</head>
+<body>
+ <div class="box">
+ 	<header>
+	 	<p><</p>
+	 	<p>选择城市</p>
+	 	<p></p>
+ 	</header>
+ 	<section>
+ 		 <div class="search">
+ 		     <p> 
+ 		         <span class="iconfont">&#xe62f;</span>
+ 		         <input type="text" placeholder="输入城市名">
+ 		     </p>	 	
+ 		 </div>
+ 		 <div class="cityList">
+ 		 	<div class="cityinfo">
+ 		 		<div class="nowCity">
+ 		 			<p>当前城市</p>
+ 		 			<div>
+ 		 				正在定位中...
+ 		 			</div>
+ 		 		</div>
+ 		 		<div class="hotCity">
+ 		 			<p>热门</p>
+ 		 			<ul class="list">
+ 		 				<li>北京</li>
+ 		 				<li>苏州</li>
+ 		 				<li>苏州</li>
+ 		 				<li>上海</li>
+ 		 				<li>无锡</li>
+ 		 				<li>广州</li>
+ 		 				<li>上海</li>
+ 		 				<li>南京</li>
+ 		 				<li>江苏</li>
+ 		 				<li>宁波</li>
+ 		 				<li>天津</li>
+ 		 				<li>福州</li>
+ 		 			</ul>
+ 		 		</div>
+ 		 	</div>
+ 		 	<div class="cityE">
+ 		 		<span>热门</span>
+ 		 		<span>A</span>
+ 		 		<span>B</span>
+ 		 		<span>C</span>
+ 		 		<span>D</span>
+ 		 		<span>E</span>
+ 		 		<span>F</span>
+ 		 		<span>G</span>
+ 		 		<span>H</span>
+ 		 		<span>I</span>
+ 		 		<span>J</span>
+ 		 		<span>K</span>
+ 		 		<span>L</span>
+ 		 		<span>M</span>
+ 		 		<span>N</span>
+ 		 		<span>O</span>
+ 		 		<span>P</span>
+ 		 		<span>Q</span>
+ 		 		<span>R</span>
+ 		 		<span>S</span>
+ 		 		<span>T</span>
+ 		 		<span>U</span>
+ 		 		<span>V</span>
+ 		 		<span>W</span>
+ 		 		<span>X</span>
+ 		 		<span>Y</span>
+ 		 		<span>Z</span>
+ 		 	</div>
+ 		 </div>
+ 	</section>
+ </div>
+	<script>
+		$(".list li").on("click",function(){
+			 $(this).css("background","url(img/1.png) no-repeat 70% 70%").siblings().css("background","#fff");
+			 $(this).css("color","rgb(70,210,101)").siblings().css("color","#000");
+		})
+	</script>
+</body>
+</html>
